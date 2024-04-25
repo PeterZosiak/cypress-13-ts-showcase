@@ -1,0 +1,28 @@
+{
+  "name": "cypress-showcase",
+  "description": "Cypress showcase",
+  "version": "1.0.0",
+  "author": "Peter Zosiak <peter.zosiak@outlook.com>",
+  "private": true,
+  "scripts": {
+    "open:t2": "npx cypress-ntlm open --env name=t2",
+    "test:t2": "npx cypress-ntlm run --browser chrome --env name=t2",
+    "test:t2:record": "npx cypress-ntlm run --browser chrome --env name=t2 --record --parallel",
+    "open:preprod": "npx cypress-ntlm open --env name=preprod",
+    "test:preprod": "npx cypress-ntlm run --browser chrome --env name=preprod",
+    "test:preprod:record": "npx cypress-ntlm run --browser chrome --env name=preprod --record --parallel",
+    "open:prod": "npx cypress-ntlm open --env name=prod",
+    "test:prod": "npx cypress-ntlm run --env name=prod",
+    "test:prod:record": "npx cypress-ntlm run --env name=prod --record --parallel",
+  },
+  "dependencies": {
+    "@types/node": "^20.6.0",
+    "fs": "^0.0.1-security",
+    "typescript": "^5.0.3"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.6",
+    "cypress-delete-downloads-folder": "^0.0.3",
+    "cypress-ntlm-auth": "^4.1.2"
+  }
+}

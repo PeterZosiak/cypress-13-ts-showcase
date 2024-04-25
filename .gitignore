@@ -1,0 +1,7 @@
+node_modules
+.http-mitm-proxy/certs
+.http-mitm-proxy/keys
+.**/
+cypress/screenshots
+cypress/videos
+cypress/downloads

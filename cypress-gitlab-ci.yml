@@ -1,0 +1,37 @@
+
+variables:
+  CYPRESS_RECORD_KEY: $CYPRESS_RECORD_KEY
+
+.e2e_tests:
+  image: cypress/included:cypress-13.6.6-node-20.11.0-chrome-121.0.6167.184-1-ff-123.0-edge-121.0.2277.128-1
+  stage: e2e_tests  
+  parallel: 2
+
+  before_script:
+    - env
+    - cd cypress-tests
+    - wget --no-check-certificate HEALT_CHECK_URL
+    - cat health
+  script:
+    - apt update
+    - apt-get install -y ca-certificates curl
+    - curl -L --insecure XXX -o ./certs.tar.gz
+    - tar -xvzf ./certs.tar.gz
+    - cp ./*.crt /usr/local/share/ca-certificates
+    - update-ca-certificates
+    - export NODE_EXTRA_CA_CERTS=./certs/cacerts.pem
+    - export NODE_TLS_REJECT_UNAUTHORIZED=0
+    - yarn install 
+    - npx cypress --version
+    - yarn test:t2
+#    - yarn test:t2:record
+#    - DEBUG=cypress:* npx cypress run --env name=t2 --record --parallel --browser chrome
+  artifacts:
+    when: on_failure
+    expire_in: 2 days
+    paths:
+      - cypress-tests/cypress/screenshots/
+      - cypress-tests/cypress/videos/
+  rules:
+    - when: manual
+      allow_failure: true

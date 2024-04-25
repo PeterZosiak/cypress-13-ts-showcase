@@ -1,0 +1,52 @@
+{
+    "BST_CUSTOMER1": {
+        "CAID": "ANONYMIZED",
+        "ICO": "ANONYMIZED",
+        "DIC": "ANONYMIZED",
+        "CustomerNumber": "ANONYMIZED",
+        "Status": "ANONYMIZED",
+        "CurrentCustomerSegment": "ANONYMIZED",
+        "CumulativCustomerSegment": "ANONYMIZED",
+        "Street": "ANONYMIZED",
+        "StreetNumber": "ANONYMIZED",
+        "HouseLetter": "ANONYMIZED",
+        "City": "ANONYMIZED",
+        "PostalCode": "ANONYMIZED",
+        "Country": "ANONYMIZED",
+        "Salesman": "ANONYMIZED",
+        "CAname": "ANONYMIZED",
+        "FCID": "ANONYMIZED",
+        "FCnumber": "ANONYMIZED",
+        "FCmodelID": "ANONYMIZED",
+        "FCname": "ANONYMIZED",
+        "FCquote": "ANONYMIZED",
+        "HeaderF1": "ANONYMIZED",
+        "HeaderF2": "ANONYMIZED",
+        "HeaderF3": "ANONYMIZED",
+        "HeaderF4": "ANONYMIZED",
+        "HeaderF5": "ANONYMIZED",
+        "HeaderF6": "ANONYMIZED",
+        "HeaderF7": "ANONYMIZED",
+        "HeaderF8": "ANONYMIZED",
+        "HeaderF9": "ANONYMIZED"
+    },
+    "BST_CUSTOMER_BASIC_SERVICES": {
+        "CAID": "ANONYMIZED",
+        "MSISDN": "ANONYMIZED",
+        "ServiceNumber": "ANONYMIZED",
+        "ProductNumber": "ANONYMIZED",
+        "PCcontractNumber": "ANONYMIZED",
+        "ProductName": "ANONYMIZED",
+        "OfferingName": "ANONYMIZED",
+        "SUBnumber": "ANONYMIZED",
+        "BPnumber": "ANONYMIZED",
+        "Status": "ANONYMIZED",
+        "ActivationDate": "ANONYMIZED",
+        "ProductDetail": {
+            "ParamId": "ANONYMIZED",
+            "ParamValue": "ANONYMIZED",
+            "ParamDesc": "ANONYMIZED"
+        }
+    },
+  ...
+}

@@ -1,0 +1,43 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "commonjs",
+		"lib": [
+			"es6",
+			"dom",
+			"es2017"
+		],
+		"types": [
+			"cypress",
+			"node",
+			"cypress-commands"
+		],
+		"allowJs": true,
+		"noEmit": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"strict": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"typeRoots": [
+			"node_modules/@types",
+			"./types/*.d.ts"
+		]
+	},
+	"include": [
+		"**/*.ts",
+		"cypress/support/*.ts",
+		"./cypress.d.ts",
+	],
+	"types": [
+		"cypress",
+		"cypress-xpath"
+	]
+}
